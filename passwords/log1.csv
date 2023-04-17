@@ -1,0 +1,6 @@
+login,john,123
+login,ann,ABC
+logout,john
+logout,ann
+login,ann,A2B
+logout,ann

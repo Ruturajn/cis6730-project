@@ -1,0 +1,2 @@
+prop MoneyReqAdv:
+    forall r . req(r) -> P exists s . [req(r),send(s,r))

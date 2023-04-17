@@ -1,0 +1,8 @@
+// This property states that for every user `u` that
+// has requested money, in some previous state the
+// money was sent to the user `u`.
+
+prop moneyReq :
+    forall u . req(u) -> P [req(u),send(u))
+
+// For future aspects verify git commit events. Merge and pull.

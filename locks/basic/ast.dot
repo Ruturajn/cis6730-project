@@ -1,0 +1,49 @@
+digraph G {
+  0 [shape=octagon, color=red, label="0 : Forall t . Forall l . ((sleep(t) -> ![acq(t,l),rel(t,l))) & (acq(t,l) -> !exists s . @ [acq(s,l),rel(s,l))) & (rel(t,l) -> @ [acq(t,l),rel(t,l))))"]
+  1 [shape=box, label="1 : Forall l . ((sleep(t) -> ![acq(t,l),rel(t,l))) & (acq(t,l) -> !exists s . @ [acq(s,l),rel(s,l))) & (rel(t,l) -> @ [acq(t,l),rel(t,l))))"]
+  2 [shape=box, label="2 : (sleep(t) -> ![acq(t,l),rel(t,l))) & (acq(t,l) -> !exists s . @ [acq(s,l),rel(s,l))) & (rel(t,l) -> @ [acq(t,l),rel(t,l)))"]
+  3 [shape=box, label="3 : (sleep(t) -> ![acq(t,l),rel(t,l))) & (acq(t,l) -> !exists s . @ [acq(s,l),rel(s,l)))"]
+  4 [shape=box, label="4 : sleep(t) -> ![acq(t,l),rel(t,l))"]
+  5 [shape=box, label="5 : sleep(t)"]
+  6 [shape=box, label="6 : ![acq(t,l),rel(t,l))"]
+  7 [shape=box, label="7 : [acq(t,l),rel(t,l))"]
+  8 [shape=box, label="8 : acq(t,l)"]
+  9 [shape=box, label="9 : rel(t,l)"]
+  7 -> 8
+  7 -> 9
+  6 -> 7
+  4 -> 5
+  4 -> 6
+  10 [shape=box, label="10 : acq(t,l) -> !exists s . @ [acq(s,l),rel(s,l))"]
+  11 [shape=box, label="11 : acq(t,l)"]
+  12 [shape=box, label="12 : !exists s . @ [acq(s,l),rel(s,l))"]
+  13 [shape=box, label="13 : exists s . @ [acq(s,l),rel(s,l))"]
+  14 [shape=box, label="14 : @ [acq(s,l),rel(s,l))"]
+  15 [shape=box, label="15 : [acq(s,l),rel(s,l))"]
+  16 [shape=box, label="16 : acq(s,l)"]
+  17 [shape=box, label="17 : rel(s,l)"]
+  15 -> 16
+  15 -> 17
+  14 -> 15
+  13 -> 14
+  12 -> 13
+  10 -> 11
+  10 -> 12
+  3 -> 4
+  3 -> 10
+  18 [shape=box, label="18 : rel(t,l) -> @ [acq(t,l),rel(t,l))"]
+  19 [shape=box, label="19 : rel(t,l)"]
+  20 [shape=box, label="20 : @ [acq(t,l),rel(t,l))"]
+  21 [shape=box, label="21 : [acq(t,l),rel(t,l))"]
+  22 [shape=box, label="22 : acq(t,l)"]
+  23 [shape=box, label="23 : rel(t,l)"]
+  21 -> 22
+  21 -> 23
+  20 -> 21
+  18 -> 19
+  18 -> 20
+  2 -> 3
+  2 -> 18
+  1 -> 2
+  0 -> 1
+}
