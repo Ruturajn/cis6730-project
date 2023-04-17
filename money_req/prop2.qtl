@@ -1,2 +1,7 @@
+// This prop states that for any money request from a user that is
+// enountered, in some previous state there has been a send
+// operation to that particular user.
+
+
 prop MoneyReqAdv:
     forall r . req(r) -> P exists s . [req(r),send(s,r))
