@@ -3,7 +3,7 @@
 
 This example can be run using:
 ```
-$ dejavu prop2.qtl log2.csv
+$ dejavu prop.qtl log1.csv
 ```
 
 Following is a screenshot showing the verification output
