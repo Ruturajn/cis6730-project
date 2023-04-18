@@ -8,4 +8,4 @@ $ dejavu prop2.qtl log2.csv
 
 Following is a screenshot showing the verification output
 
-![image](https://user-images.githubusercontent.com/56625259/232653450-9b94b42b-527f-4bc1-a826-26e37522f33a.png)
+![image](https://user-images.githubusercontent.com/56625259/232654193-4299caf1-3ada-47a0-aade-1b20cb5aa3ce.png)
