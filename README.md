@@ -13,3 +13,5 @@ that the log files must satisfy.
 Each directory also contains a screenshot showing the verification in action, along with the command that can be used for running these examples. Most of these examples 
 have been taken from the [`DejaVu`](https://github.com/havelund/dejavu) repository, with modifications that make these examples work. The others are implemented by us 
 based on our understanding of the tool.
+
+The installation instructions can be found in the [`DejaVu`](https://github.com/havelund/dejavu) repository.
